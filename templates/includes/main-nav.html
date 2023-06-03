@@ -17,10 +17,10 @@
                 Hair
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="hair-link">
-                <a href="" class="dropdown-item">Kinky-Afro</a>
-                <a href="" class="dropdown-item">Kinky-Blowout</a>
-                <a href="" class="dropdown-item">Kinky-Curly</a>
-                <a href="" class="dropdown-item">Human-Hair</a>
+                <a href="{% url 'products' %}?category=Afro" class="dropdown-item">Kinky-Afro</a>
+                <a href="{% url 'products' %}?category=Blowout" class="dropdown-item">Kinky-Blowout</a>
+                <a href="{% url 'products' %}?category=Curly" class="dropdown-item">Kinky-Curly</a>
+                <a href="{% url 'products' %}?category=Afro,Blowout,Curly" class="dropdown-item">All Hair</a>
             </div>
         </li>
 
@@ -29,22 +29,11 @@
                 Hair Care
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="haircare-link">
-                <a href="" class="dropdown-item">Wash &amp; Moisturizers</a>
-                <a href="" class="dropdown-item">Combs &amp; Dryers</a>
-                <a href="" class="dropdown-item">All Haircare</a>
+                <a href="{% url 'products' %}?category=wash_moisturizers" class="dropdown-item">Wash &amp; Moisturizers</a>
+                <a href="{% url 'products' %}?category=combs_dryers" class="dropdown-item">Combs &amp; Dryers</a>
+                <a href="{% url 'products' %}?category=wash_moisturizers,combs_dryers" class="dropdown-item">All Haircare</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
-            </div>
-        </li>
     </ul>
 </div>
