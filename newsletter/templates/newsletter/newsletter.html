@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container header-container">
+    <div class="overlay"></div>
+</div>
+
+<div class="container text-center">
+    <br>
+    <h1>Subscribe to receive news on new items!</h1>
+    <br>
+    <p>With our subscription system you will receive news about new collections when they are released! So please insert your email address inside the box below.</p>
+    <br>
+</div>
+
+<div class="container d-flex justify-content-center">
+    <div class="col-12 col-md-4 text-center">
+        <form action="#" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}       
+            <button name="subscribe" type="submit" class="btn btn-outline-black rounded-0">Subscribe!</button>
+        </form>
+    </div>
+</div>
+
+<!-- message if email is sent -->
+{% if messages %}
+{% for message in messages %}
+<div class="my-5 alert alert-success">
+    <h5 class="m-0">
+        {{ message }}
+    </h5>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}
