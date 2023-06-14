@@ -95,8 +95,56 @@
             </div>
         </div>
     </div>
-{% endblock %}
 
+    <h2 class="subtitle text-center font-weight-bold">Reviews</h2>
+    <hr>
+    <br>
+    <div class="container d-flex justify-content-center">
+        <div class="col-12 col-md-6 text-center">
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'create_review' product.id %}" class="btn btn-outline-black rounded-0">Click Here to add a Review</a>
+            <br>
+            {% else %}
+            <p> Please Login to add a review!</p>
+            <a href="{% url 'account_login' %}" class="btn btn-outline-black rounded-0">Login</a>
+            {% endif%}
+        </div>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+        <div class="col-12 col-md-6 text-center">
+    
+            {% for review in product.product_reviewed.all %}
+            <hr class="text-center">
+            <div class="container d-flex justify-content-center">
+                <div class="text-center">
+                    <p>
+                        <strong>Date:</strong> {{review.created_at|date:"Y-m-d"}},
+                        <strong>Rating:</strong>{{review.rating}}
+                    </p>
+                    <h2>{{review.title}}</h2>
+                    <p>{{review.content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% if request.user.is_authenticated %}
+    {% if request.user.is_superuser %}
+    <div class="container d-flex justify-content-center">
+        <div class="col-12 col-md-6 text-center">
+            <a href="{% url 'update_review' pk=review.id %}" class="btn btn-outline-black rounded-0">Update Review</a>
+            <a href="{% url 'delete_review' pk=review.id %}" class="btn btn-outline-black rounded-0">Remove Review</a>
+        </div>
+    </div>
+    <br>
+    {% endif %}
+    {% endif %}
+    {% empty %}
+    <div class="m-3">No reviews, be the first to leave a review by clicking the upper button!</div>
+    {% endfor %}
+
+{% endblock %}
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}

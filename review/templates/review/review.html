@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container header-container">
+    <div class="overlay"></div>
+</div>
+
+<div class="container d-flex justify-content-center">
+    <div class="col-12 col-md-6 text-center">
+        <form action="{% url 'create_review' product.id %}" method="POST" class="text-center">
+            {% csrf_token %}
+            <h2 class="m-5">Add a review for {{ product.name }}!</h2>
+            {{ form|crispy }}
+            <p>Thank you for Sharing!</p>
+            <input type="submit" name="Submit" class="btn btn-outline-black rounded-0">
+        </form>
+    </div>
+</div>
+{% endblock %}
