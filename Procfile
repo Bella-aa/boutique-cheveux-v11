@@ -1,0 +1,1 @@
+web: gunicorn boutique_cheveux.wsgi:application
