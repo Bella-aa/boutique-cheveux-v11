@@ -1,108 +1,293 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Boutique Cheveux Shop**
 
-Welcome Bella-aa,
+## **Website Intro**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Boutique Cheveux is an online ecommerce store where customers can purchase wig hair and hair care products to maintain their hair .
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The live link of the website can be found > [HERE]()
 
-## Gitpod Reminders
+![Landing Page](https://github.com/Bella-aa/boutique-cheveux-v11/assets/103276740/65e3841b-7889-40b9-95b3-8aad111a6e83)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Agile Methodology
 
-`python3 -m http.server`
+* All user stories were entered as issues in the GitHub Kanban project. The live project board can be found on the repository's project tab or on the following link: [Bella's boutique](https://github.com/Bella-aa/boutique-cheveux-v11/issues)
 
-A blue button should appear to click: _Make Public_,
+![User Stories](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/0a6b2c88-c724-4eb3-9271-b7f229484f4b)
 
-Another blue button should appear to click: _Open Browser_.
+## UX Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* *The UXD was created taking into consideration "The Five Planes"*
 
-A blue button should appear to click: _Make Public_,
+### Strategy plane
 
-Another blue button should appear to click: _Open Browser_.
+* Boutique Cheveux is designed as an ecommerce website where users can browse and purchase products in the shop and aswell as give thei opinion on cirtain products and find out more about the store/business
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Scope Plane
 
-To log into the Heroku toolbelt CLI:
+* The users will be able to create an account. After logging in, they will be able to browse and purchase antique furniture for delivery.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Structure Plane
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Boutique Cheveux  website will have 6 main menus - All producs, Hair,Hair care, Subscribe, My Account and Shopping bag. On top of that, right in the middle a search box can be found to facilitate a easy browsing where users can type the specific product they are searching for.
 
-------
+### Skeleton Plane
 
-## Release History
+* No wireframes were created for the creation of this website, as it was scrapped from the walkthrough project Boutique Ado.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Surface Plane
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* The chosen color scheme picked for the website is predominantly white and black. The main reason for this schema is the homepage background image that I chose.
+* The colors of the navigation buttons were chosen to stand out from the main theme to get the attention of the user.
+* The color contrast successfully passes using the [a11y](https://color.a11y.com/) contrast validator.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## SEO
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Keywords are used to associate website with Hair, haircare,, kinky hair, human hair, bonnets
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Business Model and Marketing Strategy
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* The website is made for small businesses that promote Boutique Cheveux products and allows users to purchase items through the website directly from the owner of the website. This is a B2C - Business to Customer model, as it allows for direct communication between the owner of the items and customers.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Facebook Page
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Social media is a great way to promote a business, in this case it is only a placeholder/mock-up page that I do not own.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Facebook](landing page)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Target Audience
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* The Antique Shop is for people of all ages and targets fans and collectors of artificial hair products.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Data Modeling
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* Database model relations between User, Product, Shopping Bag, Order, Reviews and  Newsletter.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* The different models compared to the walkthrough project are: Newsletter model were users are now able to subscribe to a newsletter so that they can recieve information about store offers and new stock. Review model were customers are able to write where they express their though on a cirtain product . In this review model cusomers were also given the option to rate the product to their liking .
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Data Model flow](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/aa4eccf7-4370-4f13-834e-6d6a76e46d91)
 
-------
+## Features
 
-## FAQ about the uptime script
+* The features represented by the website are :
 
-**Why have you added this script?**
+### Landing Page
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* This is the first page the user lands on when they open the website. The background image was chosen to attract the customers attenntion to the shop.
 
-**How will this affect me?**
+![main page](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/ff445e29-57f1-45a9-af34-a0ec8f020b5a)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Navigation Bar
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+#### Desktop Navigation bar
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  * Found on all widescreens the desktop navigation bar has the following features:
+  * To the left side, the logo can be found.
+  * To the right side the 3 main navigation links can be found: Subscribe, My Account, and Shopping bag.
+  * Right in the middle, the search box can be found.
+  * While a user is not logged in, another 2 links will be presented as a drop-down from My account: Register, and Login.
+    * In Addition, while the user is logged in My Account navigation link dropdown menu will have the following links: My Profile, and Logout.
+    * If the user is logged in as a superuser/website admin, My Account will have an additional link: Product Management coming up first.
 
-**So….?**
+![Desktop nav](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/56154177-40a1-423b-9bb1-bab9c7844696)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+ ![admin](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/8835c79d-ec27-44c3-adad-6792d9ed25da) ![User](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/2796a790-3cd0-425e-9822-7c3ebbe66530)
 
-**Can I opt out?**
+* Below the main navigation row, another 3 drop-down links to navigate the list of products can be found in the middle of the row: All Products, Hair and Hair care
+* All Products link will contain 4 sorting links to make browsing easier: By Price, By Rating, By Category, and All Products.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![All products](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/bdf44a4d-2ab1-4a25-8b03-f1a3ebcdc894)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Hair  link will contain another 4 sorting links to facilitate browsing by category of the different types of hair available  and All hair  and the Hair care will also have similar links.
 
-**Anything more?**
+![Hair](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/2c4f31b8-8c03-4ffc-a132-db9c373394a4)  ![Hair care](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/46aaacca-c50b-4a59-a27d-eeabb09d2844)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+#### Mobile Navigation bar
 
----
+* Found on all medium and small screens the mobile navigation bar has the same features but with a different design.
 
-Happy coding!
+![mobile view](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/00fdfb5b-a6d1-404b-99ae-7a4e4357c5ce)
+
+### Authentication Pages
+
+#### Sign Up
+
+* On this page, you can register a new account by filling in the email address, username, and the password
+
+![Sign up](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/24ee9c8c-016c-4e66-8447-88a6be97cdb5)
+
+#### Sign In
+
+* This is the sign-in/log-in page where users can authenticate their credentials to log in to the website or click forgot password in case they forget their password, in which case an email will be sent to with a link that will help them reset their password.
+
+![Sign in](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/ebe08d58-0ef5-43c4-b0cf-0ad9a035eb55)
+
+### Products Page
+
+* Navigating to All Products page, you can find the list of the products available for sale, with options for sorting as it is observed here, sorted by category starting from 4 items in line starting on large screens and going down to a single item on the small screens and in addition a scroll back to rop button can be found to facilitate browsing. Clicking on any product picture, name or price will lead to a new page leading to the selected product.
+
+![Products](image)
+
+#### **Selected Product**
+
+* This is the page of any selected individual product, options here are:
+  * Edit and delete for admins.
+  * Increase or decrease quantity, add to bag, and return to the products page by clicking keep shopping.
+
+![Individual Product](image)
+
+### Reviews Pages
+
+* Once a product is selected on the bottom, users can find the reviews with a button to a review, which will lead them to a form page where they can add a review and a rating. Site admins/staff members can edit or delete reviews in case of inappropriate language usage.
+
+![Reviews](image)
+
+* Review update, for admins only.
+
+![Review Update](image)
+
+* Review deletions, for admins only.
+
+![Review delete](image)
+
+### Bag Page
+
+* Product info, Price, Quantity, Subtotal, Bag total, Delivery price, and the Grand Total price. In addition, 2 buttons can be found Keep shopping to return back to products to facilitate browsing and Secure Checkout to move to the payment page, so the user can purchase the selected products.
+
+![Bag](image)
+
+### Checkout Page
+
+* This is the checkout page, where the user can fill in their personal details, and card details to make a purchase, in addition, the order summary can be found on the right side. Also at the bottom, 2 buttons can be found, so the user can adjust their bag or complete the order once the details have been introduced.
+
+![Checkout](image)
+
+* After the user completed their order, they will be redirected to another page where they can view the confirmation details of their order. The user can press back to products to continue browsing.
+
+![Checkout success](image)
+
+### Subscribe Page
+
+* This is the subscribe page, where site users or visitors can fill in their email address to receive a newsletter about the website and new products and offers.
+
+![subscribe](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/41704ea7-c070-4f61-b368-5505d1040b7a)
+
+### Product Management
+
+* On this page, leading down from the My Account drop-down link by clicking Product Management site admins/staff members can add new products for sale on the website.
+
+![Screenshot 2023-06-18 105721](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/0c6479df-75b7-48db-905c-3eef56a3c370)
+
+### My Profile
+
+* On this page, leading down from the My Account drop-down link by clicking My Profile site users can update their personal details.
+
+![Screenshot 2023-06-18 105903](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/4e09e792-cfaf-4f70-9c73-e8fc6c0a423c)
+
+### Toasts
+
+* Toasts are confirmation messages to the user's actions for a better experience on the website, so users can feel the impact of their actions on the website and to be assured that they have completed the action.
+
+### Footer
+
+* At the bottom of all pages the footer can be found serving social media links and copyright mark.
+
+![Footer](image)
+
+## Technologies Used
+
+* Python
+  * The packages installed for the is project can be found in the **requirements.txt**
+* Django
+  * Django was used as the python framework in the project.
+  * Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
+* Heroku
+  * Used to deploy the page and make it publicly available.
+* ElephantSQL, PostreSQL database
+  * Used for the database during development and in deployment.
+* HTML
+  * HTML was the base language used to layout the skeleton of all templates.
+* CSS
+  * Custom CSS used to style the page and make the appearance look a little more unique.
+* Javascript
+  * I have used Javascript for Toasts and Stripe payments.
+* Bootstrap
+  * Used to style HTML, CSS. 
+* Font awesome
+  * All icons throughout the page.
+
+## Deployment
+
+The project was deployed onto heroku following all the steps outlined in the walkthrough migrating the project to a different data base.
+
+
+## Testing
+
+For this project manual testing was applied:
+
+Constant use of "Run and Debug". This was the most used method of debugging:
+
+* Add a breakpoint to the function currently in test, and check line by line if your variables behaves as intended.
+
+Manual testing occurred regularly throughout local development, making use of statements that would print information to the console and use the Django debug pages.
+
+All links redirects, and functionalities for purchasing products have been manually tested with success.
+
+The website was tested on:
+
+* Browsers: Firefox, Chrome,  and Microsoft Edge.
+* Devices: Personal Samsung laptop, hp laaptop, Samsung A7 device, Samsung S20, Iphone 13
+
+### Fixed Bugs
+
+hgjgckh
+
+### Known Bugs
+
+* Adjusting the cut items is not working well and the sorting products by category , price and rating is not working. I wish to revisit these errors and fix them so that users can be provided with the functionality for better user experience in the store.
+
+## Credits
+
+* Thanks to tutor support, they guided me through all the time I got stuck .
+
+### General reference
+
+* Besides the course's material I also used W3schools, youtube, Stack Overflow, and Django documentation for general or more in-depth reference for the other things I needed.
+
+### Content and Media
+
+* The content of the website was written by myself.
+* The structure of the website was scrapped from the walktrough project Boutique Ado.
+* Font linked from [Google Fonts](https://fonts.google.com/).
+* All images were taken from the public domain with full royalty-free copyright.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
