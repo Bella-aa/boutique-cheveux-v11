@@ -69,6 +69,26 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+class AddLike(View):
+    """ Like products class """
+    def post(self, request, pk, *args, **kwargs):
+        """ Method to add or remove likes """
+        product = Product.objects.get(pk=pk)
+        is_like = False
+        for like in product.likes.all():
+            if like == request.user:
+                is_like = True
+                break
+        if not is_like:
+            product.likes.add(request.user)
+            messages.info(request, 'Thanks for the "Like"!')
+        if is_like:
+            product.likes.remove(request.user)
+            messages.info(request, 'You removed "Like"!')
+        next_ = request.POST.get('next_', '/')
+        return HttpResponseRedirect(next_)
+
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
