@@ -89,18 +89,6 @@
                                                 </small>
                                             {% endif %}
                                         </div>
-                                        <div class="likes-font">
-                                            {% if user.is_authenticated %}
-                                            <form method="post" action="{% url 'like' product.id %}">
-                                                {% csrf_token %}
-                                                <input type="hidden" name="next_" value="{{ request.path }}">
-                                                <button name="likes" class="btn btn btn-primary" type="submit">{{product.likes.count}} Likes</button>
-                                            </form>
-                                                {% else %}
-                                                <a class="btn btn-outline-info"
-                                                    href="{% url 'account_login' %}?next={{request.path}}">Login to Add Like! {{product.likes.count}} Likes</a><br>
-                                                {% endif %}
-                                        </div>
                                     </div>
                                 </div>
                             </div>
