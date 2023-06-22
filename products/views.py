@@ -88,7 +88,6 @@ class AddLike(View):
         next_ = request.POST.get('next_', '/')
         return HttpResponseRedirect(next_)
 
-
 @login_required
 def add_product(request):
     """ Add a product to the store """
