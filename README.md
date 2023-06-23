@@ -5,6 +5,8 @@
 Boutique Cheveux is an online ecommerce store where customers can purchase wig hair and hair care products to maintain their hair .
 
 The live link of the website can be found > [HERE]()
+ * deployed link > [clickhere](https://boutique-cheveux-6d3bebfaf3f2.herokuapp.com/)
+ * link to github [clickhere](https://github.com/Bella-aa/boutique-cheveux-v11)
 
 ![Landing Page](https://github.com/Bella-aa/boutique-cheveux-v11/assets/103276740/65e3841b-7889-40b9-95b3-8aad111a6e83)
 
@@ -52,17 +54,17 @@ The live link of the website can be found > [HERE]()
 
 * Social media is a great way to promote a business, in this case it is only a placeholder/mock-up page that I do not own.
 
-![Facebook](landing page)
+![Facebook](https://github.com/Bella-aa/quiz-application/assets/103276740/a0861549-667a-4125-95c9-4358fd9845f6)
 
 ### Target Audience
 
-* The Antique Shop is for people of all ages and targets fans and collectors of artificial hair products.
+* The Boutique Cheveux is for people of all ages and targets fans and collectors of artificial hair products.
 
 ## Data Modeling
 
 * Database model relations between User, Product, Shopping Bag, Order, Reviews and  Newsletter.
 
-* The different models compared to the walkthrough project are: Newsletter model were users are now able to subscribe to a newsletter so that they can recieve information about store offers and new stock. Review model were customers are able to write where they express their though on a cirtain product . In this review model cusomers were also given the option to rate the product to their liking .
+* The different models compared to the walkthrough project are: Newsletter model were users are now able to subscribe to a newsletter so that they can recieve information about store offers and new stock. Review model were customers are able to write where they express their thoughts on a cirtain product . In this review model customers were also given the option function to rate the product to their liking .
 
 ![Data Model flow](https://github.com/Bella-aa/boutique-cheveux-v3/assets/103276740/aa4eccf7-4370-4f13-834e-6d6a76e46d91)
 
@@ -125,45 +127,52 @@ The live link of the website can be found > [HERE]()
 
 * Navigating to All Products page, you can find the list of the products available for sale, with options for sorting as it is observed here, sorted by category starting from 4 items in line starting on large screens and going down to a single item on the small screens and in addition a scroll back to rop button can be found to facilitate browsing. Clicking on any product picture, name or price will lead to a new page leading to the selected product.
 
-![Products](image)
+![Products](https://github.com/Bella-aa/quiz-application/assets/103276740/ce3a0fcd-9a16-41a3-a5e3-0e739c7c1d11)
 
 #### **Selected Product**
 
 * This is the page of any selected individual product, options here are:
+  * Product description
   * Edit and delete for admins.
   * Increase or decrease quantity, add to bag, and return to the products page by clicking keep shopping.
 
-![Individual Product](image)
+![Individual product](https://github.com/Bella-aa/quiz-application/assets/103276740/0bdeb324-4eac-42de-b26c-d9e9245fbb54)
 
 ### Reviews Pages
 
 * Once a product is selected on the bottom, users can find the reviews with a button to a review, which will lead them to a form page where they can add a review and a rating. Site admins/staff members can edit or delete reviews in case of inappropriate language usage.
 
-![Reviews](image)
+![Review](https://github.com/Bella-aa/quiz-application/assets/103276740/106e4534-102f-478d-9dd8-31dea8a94f64)
+
 
 * Review update, for admins only.
 
-![Review Update](image)
+![update review](https://github.com/Bella-aa/quiz-application/assets/103276740/930d2863-6275-45de-9504-89a59687d0aa)
+
 
 * Review deletions, for admins only.
 
-![Review delete](image)
+![Screenshot 2023-06-23 185341](https://github.com/Bella-aa/quiz-application/assets/103276740/875e0cee-2f3d-4b05-a66d-e3c2d93edc3c)
+
 
 ### Bag Page
 
 * Product info, Price, Quantity, Subtotal, Bag total, Delivery price, and the Grand Total price. In addition, 2 buttons can be found Keep shopping to return back to products to facilitate browsing and Secure Checkout to move to the payment page, so the user can purchase the selected products.
 
-![Bag](image)
+![Screenshot 2023-06-23 185550](https://github.com/Bella-aa/quiz-application/assets/103276740/9684e6d8-0382-4d4a-8943-11ee6fe3735b)
+
 
 ### Checkout Page
 
 * This is the checkout page, where the user can fill in their personal details, and card details to make a purchase, in addition, the order summary can be found on the right side. Also at the bottom, 2 buttons can be found, so the user can adjust their bag or complete the order once the details have been introduced.
 
-![Checkout](image)
+![Checkout page](https://github.com/Bella-aa/quiz-application/assets/103276740/27b0500d-3491-49a4-b289-9e9430563c6c)
+
 
 * After the user completed their order, they will be redirected to another page where they can view the confirmation details of their order. The user can press back to products to continue browsing.
 
-![Checkout success](image)
+![checkout sucess](https://github.com/Bella-aa/quiz-application/assets/103276740/47c3247a-e66f-4b1e-b85f-33b1e8c08f8f)
+
 
 ### Subscribe Page
 
@@ -191,7 +200,8 @@ The live link of the website can be found > [HERE]()
 
 * At the bottom of all pages the footer can be found serving social media links and copyright mark.
 
-![Footer](image)
+![footer image](https://github.com/Bella-aa/quiz-application/assets/103276740/3180ec1d-34a2-49ec-9ed8-419511a8f375)
+
 
 ## Technologies Used
 
@@ -235,7 +245,7 @@ All links redirects, and functionalities for purchasing products have been manua
 The website was tested on:
 
 * Browsers: Firefox, Chrome,  and Microsoft Edge.
-* Devices: Personal Samsung laptop, hp laaptop, Samsung A7 device, Samsung S20, Iphone 13
+* Devices: Personal Samsung laptop, hp laaptop, Samsung A7 device, Iphone 12
 
 ### Fixed Bugs
 
@@ -243,11 +253,11 @@ hgjgckh
 
 ### Known Bugs
 
-* Adjusting the cut items is not working well and the sorting products by category , price and rating is not working. I wish to revisit these errors and fix them so that users can be provided with the functionality for better user experience in the store.
+* The sorting products by category , price and rating is not working. I wish to revisit these errors and fix them so that users can be provided with the functionality for better user experience in the store.
 
 ## Credits
 
-* Thanks to tutor support, they guided me through all the time I got stuck .
+* Thanks to tutor support, they guided me through all the time I when I got stuck .
 
 ### General reference
 
