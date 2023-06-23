@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /products/
+Sitemap:https://boutique-cheveux-6d3bebfaf3f2.herokuapp.com/sitemap.xml
