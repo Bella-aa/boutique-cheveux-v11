@@ -30,10 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-#ALLOWED_HOSTS = ['boutique-cheveux-6d3bebfaf3f2.herokuapp.com', 'localhost']
-
 ALLOWED_HOSTS = ['boutique-cheveux-6d3bebfaf3f2.herokuapp.com', 'https://boutique-cheveux-6d3bebfaf3f2.herokuapp.com', '8000-bellaaa-boutiquecheveux-n8udnvsio4r.ws-eu100.gitpod.io']
-
 
 # Application definition
 

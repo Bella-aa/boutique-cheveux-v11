@@ -249,7 +249,10 @@ The website was tested on:
 
 ### Fixed Bugs
 
-hgjgckh
+* There was a missing tag on the form element in the bag.html page. This missing tag was causing the code display on the website. The missing tag was added and everything was displaying normal.
+* There was an error displaying when the admin wanted to delete a review saying page does not exist. This was caused because there was a spelling error in the delelete-review html file. The spelling error was fixed and the page was displaying as normal.
+* After deploying the website, the products were not displaying, so I added the products again through the deployed admin paneland all the products were now showing .
+* After deploying the website, an internal server error was occuring when ever I tried performing an action in the checkout basket or even opening the website. To solve this error I created an envy.py file were I imported the project secrete key and the database url. After performing these steps the website was now working well.
 
 ### Known Bugs
 
