@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = 'DEVELOPMENT' in os.environ
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['boutique-cheveux-6d3bebfaf3f2.herokuapp.com', 'https://boutique-cheveux-6d3bebfaf3f2.herokuapp.com', '8000-bellaaa-boutiquecheveux-n8udnvsio4r.ws-eu100.gitpod.io']
 

@@ -203,6 +203,10 @@ The live link of the website can be found > [HERE]()
 
 ![footer image](https://github.com/Bella-aa/quiz-application/assets/103276740/3180ec1d-34a2-49ec-9ed8-419511a8f375)
 
+## Future Features 
+
+* Above all the features present on the website , I would like to add a feature for users to create a wishlist for their products. Id also like to add a feature for users to add product likes and to save their products favourites in the store. 
+
 
 ## Technologies Used
 
