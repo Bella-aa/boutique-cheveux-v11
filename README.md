@@ -5,6 +5,7 @@
 Boutique Cheveux is an online ecommerce store where customers can purchase wig hair and hair care products to maintain their hair .
 
 The live link of the website can be found > [HERE]()
+* link to local site > [open](https://8000-bellaaa-boutiquecheveux-n8udnvsio4r.ws-eu100.gitpod.io/)
  * deployed link > [clickhere](https://boutique-cheveux-6d3bebfaf3f2.herokuapp.com/)
  * link to github [clickhere](https://github.com/Bella-aa/boutique-cheveux-v11)
 
@@ -387,6 +388,31 @@ STRIPE_PUBLIC_KEY = config('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
 STRIPE_WH_SECRET = config('STRIPE_WH_SECRET')
 ```
+
+## Gmail Variables
+
+* Log into gmail account
+* Go to Settings and than See all settings
+* Top menu go to Accounts and import
+* Find on the list Other google account settings
+* Left side menu - Security
+* Turn on two step verification: add phone number and follow instructions
+* Go back to security App passwords - Select Mail, Select Device - Other, Django, Copy app password.
+
+* In Heroku EMAIL_HOST_PASS is the password copied from above. EMAIL_HOST_USER is the gmail email address.
+
+* Add email settings to your settings.py, use env variables to add your keys like so:
+
+```
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASS')
+DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')
+```
+
 
 ## Testing
 
